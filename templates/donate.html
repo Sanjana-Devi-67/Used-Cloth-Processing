@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Donate Clothes</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Donate Clothes</h2>
+        <form  method="POST">
+            <div class="form-group">
+                <label for="donor_name">Donor Name</label>
+                <input type="text" class="form-control" id="donor_name" name="donor_name" required>
+            </div>
+            <div class="form-group">
+                <label for="cloth_type">Cloth Type</label>
+                <input type="text" class="form-control" id="cloth_type" name="cloth_type" required>
+            </div>
+            <div class="form-group">
+                <label for="quantity">Quantity</label>
+                <input type="number" class="form-control" id="quantity" name="quantity" min="1" required>
+            </div>
+            <div class="form-group">
+            <label for="condition">Condition</label>
+            <input type="text" class="form-control" id="condition" name="condition" required>
+            </div>
+
+            <button type="submit" class="btn btn-success btn-block">Donate</button>
+        </form>
+        <a href="/dashboard" class="btn btn-secondary btn-block mt-3">Back to Dashboard</a>
+    </div>
+</body>
+</html>
